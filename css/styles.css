@@ -12,8 +12,8 @@ body{
 }
  #social_networks a{
   padding: 6px;
-
 }
+
 #social_networks{
   background: none;
 }
@@ -232,7 +232,7 @@ article #partido_index{
   margin: 15px;
   padding: 15px;
 }
-label,input,form p{
+label,input,form p,#boton{
   margin-bottom: 10px;
   font-size:13px;
   display:block;
@@ -242,13 +242,41 @@ label,input,form p{
 input:focus{
   border: 2px solid #000;
 }
-input[type='button']{
+input[type='button'],#boton{
   background:#1668c4;
   color: #fff;
 }
 input[type='button']:hover{
   background:#4a88fa;
   cursor: pointer;
+}
+.resultado_random{
+background: #4C94AF;
+border-radius: 4%;
+}
+.resultado_random label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    font-size: 18px;
+}
+#textResultado{
+  font-size: 17px;
+}
+#boton:hover{
+  background:#31CD8A;
+  cursor: pointer;
+  color: #000;
+}
+.resultado_random input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
 }
 .relatos p{
   position: inline;

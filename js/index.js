@@ -18,15 +18,15 @@ function cambiar(){
       let btn_p = document.getElementById('per').checked;
 
     if(btn_p){
-        let var_=document.getElementById("textNombre");
-        var_.innerHTML= "Perdemos " + resultados_r[ran()];
+        let var_=document.getElementById("textResultado");
+        var_.innerHTML= "Resultado random para la proxima fecha: perdemos  " + resultados_r[ran()];
 
   } else if(btn_e){
-        let var_=document.getElementById("textNombre");
-        var_.innerHTML= "Empatamos " + resultados_e[ran()];
+        let var_=document.getElementById("textResultado");
+        var_.innerHTML= "Resultado random para la proxima fecha: empatamos " + resultados_e[ran()];
 
     }else if(btn_g){
-        let var_=document.getElementById("textNombre");
-        var_.innerHTML= "Ganamos " + resultados_r[ran()];
+        let var_=document.getElementById("textResultado");
+        var_.innerHTML= "Resultado random para la proxima fecha: ganamos " + resultados_r[ran()];
     }
     }
