@@ -1,1 +1,268 @@
+* {
+  margin:0;
+  padding:0;
+}
 
+body{
+  background-image:url(../imagenes/body.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+ #social_networks a{
+  padding: 6px;
+
+}
+#social_networks{
+  background: none;
+}
+
+header, .main ,footer {
+  width:90%;
+  max-width:1000px;
+  margin:20px auto;
+}
+header nav {
+  background:#000;
+  overflow: hidden;
+}
+header nav ul{
+  list-style:none;
+}
+header nav ul li{
+  float:left;
+}
+header nav ul li a{
+  padding: 10px 20px;
+  display:block;
+  color:#fff;
+  text-decoration:none;
+}
+header nav ul li a:hover{
+  background:#D96FE8;
+  color:black;
+  font-size:18px;
+}
+.main .articles{
+  width:58.5%;
+  margin-right:1.5%;
+  float:left;
+}
+.main .articles article{
+  padding:20px;
+  background:#fff;
+  margin-bottom:20px;
+}
+aside{
+  width:40%;
+  background:#ccc;
+  float:left;
+  border-bottom:: solid black 1px;
+  padding:20px;
+  box-sizing: border-box;
+  border-radius:5%;
+
+}
+footer{
+  background:#000;
+  color:#fff;
+  clear:both;
+  padding:5px 0px;
+  text-align:center;
+}
+
+div h1{
+  text-align:left;
+  border:30px;
+  font-style:blacker;
+  font-size:43px;
+  transition-property:color;
+  transition-duration:3s;
+  /*transition: transform 3s;*/
+  position:absolute;
+  top:55px;
+  bottom:85%;
+  left:30%;
+  right:34%;
+}
+div h1 {
+  background:#BF72AF;
+}
+
+div h1:hover{
+  color:#000;
+  /*transform:translateX(25%);*/
+}
+table{
+  border:3px solid #000;
+  border-collapse:collapse;
+}
+table tr {
+  border:2px solid #000;
+}
+table tr:hover{
+  background:#88D7D5;
+}
+th, td{
+  border:solid 2px black;
+  padding:3px;
+}
+thead{
+  background-color:#246355;
+  border-bottom: solid 2px #0f362d;
+  color:white;
+}
+tr:nth-child(even){
+  background-color:#ddd;
+}
+.title h1{
+  font-size: 200%;
+  background:#fff;
+  text-align: center;
+}
+div .title{
+  height: auto;
+  width:auto;
+}
+
+aside h3, #our_scorers{
+  padding: 10px;
+}
+h4{
+  padding: 7px;
+}
+#our_scorers{
+  color:#000;
+  text-align: center;
+background: none;
+}
+
+p {
+  font-style: blacker;
+}
+#last_match{
+  height: 40%;
+  width: 100%;
+  padding:1px;
+  border: 2px solid #000;
+  border-radius: 10%;
+}
+#scorers_table{
+  border:3px solid #000;
+  border-collapse:collapse;
+  background-color: #fff;
+}
+#foto_partido{
+  width: 100%
+}
+.conteiner{
+  position: relative;
+  top: 20px;
+  width:100%;
+  height:auto;
+  margin:auto;
+}
+.image_list{
+  border: solid 2px black;
+}
+.conteiner .players_list{
+  display:inline-flex;
+  flex-wrap:wrap;
+
+}
+.conteiner .players_list li{
+  margin-right: auto;
+  margin-left: 10px;
+  margin-bottom: 5px;
+ list-style: none;
+}
+.image_list{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 2%;
+}
+
+
+.datos_jugadores ul li{
+  margin-top: 1px;
+  background: #ccc;
+  list-style: none;
+}
+#Name_player{
+  list-style: square;
+  background: #61AAF0;
+
+  }
+.datos_jugadores{
+  margin-top: 10%;
+}
+.datos_jugadores ul li{
+  font-size: 19px;
+}
+
+.torneo19 li{
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  text-align:center;
+  padding: 0;
+  margin: 0;
+}
+.torneo19 li a{
+  padding: 10px 10px;
+  display:inline-block;
+  text-decoration: none;
+  color: #aaa;
+}
+.torneo19 li a:hover{
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5%;
+}
+article #partido_index{
+  font-size: 18px;
+}
+ form{
+  background: none;
+  width: 80%;
+  border: 2px solid #000;
+  margin: 15px;
+  padding: 15px;
+}
+label,input,form p{
+  margin-bottom: 10px;
+  font-size:13px;
+  display:block;
+  width: 90%;
+  padding: 10px;
+}
+input:focus{
+  border: 2px solid #000;
+}
+input[type='button']{
+  background:#1668c4;
+  color: #fff;
+}
+input[type='button']:hover{
+  background:#4a88fa;
+  cursor: pointer;
+}
+.relatos p{
+  position: inline;
+  padding: 10px;
+  background: #ccc;
+  font-size: 19px;
+}
+.relatos strong{
+  padding-bottom: 5px;
+}
+table .nosotros{
+  background: #87E343;
+}
+div .position_table{
+  width: 100%;
+  position:;
+}
