@@ -21,6 +21,7 @@ function cambiar(){
         let var_=document.getElementById("textResultado");
         var_.innerHTML= "Resultado random para la proxima fecha: perdemos  " + resultados_r[ran()];
 
+
   } else if(btn_e){
         let var_=document.getElementById("textResultado");
         var_.innerHTML= "Resultado random para la proxima fecha: empatamos " + resultados_e[ran()];
