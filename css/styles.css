@@ -79,7 +79,7 @@ footer{
 
 header .title{
   height: 8%;
-  width:50%;
+  width:40%;
   left: 20%;
   background:#fff;
   justify-content: center;
@@ -125,6 +125,7 @@ background: none;
 
 p {
   font-style: blacker;
+  font-size: 18px;
 }
 #last_match{
   height: 60%;
