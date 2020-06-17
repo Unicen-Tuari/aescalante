@@ -6,8 +6,8 @@ let btn = document.getElementById("boton");
 btn.addEventListener("click", cambiar);
 
 function ran(){
-  let num = Math.floor(Math.random() * resultados_r.length);
-return num;
+ return  Math.floor(Math.random() * resultados_r.length);
+
   }
 
 function cambiar(){
