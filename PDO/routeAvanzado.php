@@ -1,6 +1,6 @@
 <?php
 require_once "ConfigApp.php";
-require_once "intro_bootstrap.php";
+require_once "panel_control.php";
 //require_once "operandos.php";
 //require_once "about.php";
 
