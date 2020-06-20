@@ -1,27 +1,31 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-20 21:04:35
+/* Smarty version 3.1.34-dev-7, created on 2020-06-20 21:21:29
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5eee5dc31f5785_54116385',
+  'unifunc' => 'content_5eee61b9be8709_77007851',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49b9a608728e1213577004363f1040bfe59056c2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\index.tpl',
-      1 => 1592679711,
+      1 => 1592680886,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:header.tpl' => 1,
+    'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5eee5dc31f5785_54116385 (Smarty_Internal_Template $_smarty_tpl) {
-?><main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+function content_5eee61b9be8709_77007851 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
     <div
         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Control de Jugadores</h1>
@@ -138,5 +142,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
 </main>
 </div>
-</div><?php }
+</div>
+<?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
 }
