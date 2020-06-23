@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-22 19:50:06
-  from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\index.tpl' */
+/* Smarty version 3.1.34-dev-7, created on 2020-06-23 05:58:13
+  from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\players_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ef0ef4edf1f93_36523527',
+  'unifunc' => 'content_5ef17dd5a3d7d0_83335681',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '49b9a608728e1213577004363f1040bfe59056c2' => 
+    '31b247ee1dc917a6fb8480c355008bb3c1bfc562' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\index.tpl',
-      1 => 1592848067,
+      0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\players_adm.tpl',
+      1 => 1592884659,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templateEngine/templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ef0ef4edf1f93_36523527 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef17dd5a3d7d0_83335681 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -33,16 +33,17 @@ $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header.tpl", $_s
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
             </div>
-            <button type="button" class="btn btn-success">Compartir a Home</button>
+            <button type="button" class="btn btn-success">Vista Usuario</button>
         </div>
     </div>
     <h2>Sumar jugador al plantel</h2>
 
-    <form action="add" mothod="GET">
+    <form action="addPlayer" mothod="GET">
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control" name="name" id="name">
+                <p id="note">Los campos Nombre y Apellido tiene que ser de tipo 'string'. </p>
             </div>
             <div class="form-group col-md-5">
                 <label for="apellido">Apellido</label>
@@ -52,19 +53,35 @@ $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header.tpl", $_s
 
         <div class="form-row">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Posicion
-                </button>
-
+                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Ej: Arquero">
+                    <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Posicion</button>
+                  </span>                    
+                        <select name="id_position" id="id_position">
+                            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['positions']->value, 'position');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['position']->value) {
+?>
+                            <option value="<?php echo $_smarty_tpl->tpl_vars['position']->value['id_position'];?>
+"><?php ob_start();
+echo $_smarty_tpl->tpl_vars['position']->value['name'];
+$_prefixVariable1 = ob_get_clean();
+echo $_prefixVariable1;?>
+</option>
+                            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                          </select> 
+                                                                        
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <!-- Aca iria el foreach con las posiciones -->
                 </div>
             </div>
 
             <div class="form-group col-md-3">
+                
+                <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Ej: La Pulga">
                 <label for="apodo">Apodo</label>
-                <input type="text" class="form-control" id="nickname" name="nickname" placeholder="--">
             </div>
         </div>
         <div class="form-group">
@@ -89,8 +106,6 @@ $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header.tpl", $_s
             </thead>
             <tbody>
                 <tr>
-
-
                     <!-- $players= getPlayers(); -->
 
                     <?php
@@ -120,7 +135,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['player']->value) {
                     </td>
                     <td>
                         <a href="#"><span data-feather="edit"></span>Editar</a>
-                        <a href="delete/<?php echo $_smarty_tpl->tpl_vars['player']->value['id_player'];?>
+                        <a href="deletePlayer/<?php echo $_smarty_tpl->tpl_vars['player']->value['id_player'];?>
 "><span data-feather="trash"></span>Elimitar</a>
                         <a href="#"><span data-feather="check"></span>Terminar</a>
                     </td>

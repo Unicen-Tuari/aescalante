@@ -1,4 +1,5 @@
-{include file="header.tpl"}
+{include file="templateEngine/templates/header.tpl"}
+
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
     <div
         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -6,46 +7,43 @@
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
             </div>
-            <button type="button" class="btn btn-success">Compartir a Home</button>
+            <button type="button" class="btn btn-success">Vista Usuario</button>
         </div>
     </div>
     <h2>Sumar jugador al plantel</h2>
 
-    <form action="add" mothod="GET">
+    <form action="addPlayer" mothod="GET">
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control" name="name" id="name">
+                <p id="note">Los campos Nombre y Apellido tiene que ser de tipo 'string'. </p>
             </div>
             <div class="form-group col-md-5">
                 <label for="apellido">Apellido</label>
                 <input type="text" class="form-control" name="surname" id="surname">
             </div>
         </div>
-        <br>
+
         <div class="form-row">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Posicion
-                </button>
-
+                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Ej: Arquero">
+                    <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Posicion</button>
+                  </span>                    
+                        <select name="id_position" id="id_position">
+                            {foreach from=$positions item=$position}
+                            <option value="{$position['id_position']}">{{$position['name']}}</option>
+                            {/foreach}
+                          </select> 
+                                                                        
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <a class="dropdown-item" href="#" id="id_position">2</a>
                 </div>
             </div>
 
             <div class="form-group col-md-3">
+                
+                <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Ej: La Pulga">
                 <label for="apodo">Apodo</label>
-                <input type="text" class="form-control" id="nickname" name="nickname" placeholder="--">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                    Check me out
-                </label>
             </div>
         </div>
         <div class="form-group">
@@ -70,8 +68,6 @@
             </thead>
             <tbody>
                 <tr>
-
-
                     <!-- $players= getPlayers(); -->
 
                     {foreach from=$players item=player}
@@ -93,16 +89,15 @@
                     </td>
                     <td>
                         <a href="#"><span data-feather="edit"></span>Editar</a>
-                        <a href="delete/{$player['id_player']}"><span data-feather="trash"></span>Elimitar</a>
+                        <a href="deletePlayer/{$player['id_player']}"><span data-feather="trash"></span>Elimitar</a>
                         <a href="#"><span data-feather="check"></span>Terminar</a>
                     </td>
                 </tr>
                 {/foreach}
             </tbody>
         </table>
-
     </div>
 </main>
-</div>
-</div>
-{include file="footer.tpl"}
+
+
+{include file="templateEngine/templates/footer.tpl"}

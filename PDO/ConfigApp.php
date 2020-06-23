@@ -5,9 +5,10 @@
     public static $PARAMS = "params";
     public static $ACTIONS = [  
         'operacion' => 'calculadora',
-        "add" => 'addPlayer',
-        "delete"=>'removePlayer',
-        'home' => 'home'
+        "addPlayer" => 'addPlayer',
+        "deletePlayer"=>'removePlayer',
+        'home' => 'home',
+        'positions'=>'position'
     ];
 }
 
