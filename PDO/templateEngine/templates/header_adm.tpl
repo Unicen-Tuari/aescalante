@@ -11,13 +11,14 @@
     <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
     <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
 
-    <link rel="icon" type="" href="templateEngine/templates/icoono/icono.png">
+    <link rel="icon" type="" href="/icono/icono.png">
 
     <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 
     <meta name="theme-color" content="#563d7c">
     <!--  Custom styles for this template  -->
-    <link href="templateEngine/templates/css/intro_bootstrap.css" rel="stylesheet">
+    <link href="css/intro_bootstrap.css" rel="stylesheet">
+    <base href="{BASE_URL}">
 </head>
 
 <body>
@@ -40,13 +41,13 @@
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link " href="home">
                                 <span data-feather="home"></span>
-                                Jugadores <span class="sr-only">(current)</span>
+                                Jugadores <span class="user"></span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item" id="">
+                            <a class="nav-link" href="positions">
                                 <span data-feather="users">(current)</span>
                                 Posiciones
                             </a>

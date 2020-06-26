@@ -1,35 +1,35 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-23 05:58:13
+/* Smarty version 3.1.34-dev-7, created on 2020-06-24 21:59:15
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\players_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ef17dd5a3d7d0_83335681',
+  'unifunc' => 'content_5ef3b093676c19_05266674',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '31b247ee1dc917a6fb8480c355008bb3c1bfc562' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\players_adm.tpl',
-      1 => 1592884659,
+      1 => 1593028753,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
-    'file:templateEngine/templates/header.tpl' => 1,
-    'file:templateEngine/templates/footer.tpl' => 1,
+    'file:templateEngine/templates/header_adm.tpl' => 1,
+    'file:templateEngine/templates/footer_adm.tpl' => 1,
   ),
 ),false)) {
-function content_5ef17dd5a3d7d0_83335681 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+function content_5ef3b093676c19_05266674 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
     <div
         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Control de Jugadores</h1>
+        <h1 class="h2">Gestion de Jugadores</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
             </div>
@@ -123,7 +123,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['player']->value) {
 </p>
                     </td>
                     <td>
-                        <p><?php echo $_smarty_tpl->tpl_vars['player']->value['id_position'];?>
+                        <p><?php echo $_smarty_tpl->tpl_vars['positions']->value[$_smarty_tpl->tpl_vars['player']->value['id_position']-2]['name'];?>
  </p>
                     </td>
                     <td>
@@ -150,6 +150,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </main>
 
 
-<?php $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+<?php $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/footer_adm.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
 }
