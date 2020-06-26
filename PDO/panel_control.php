@@ -28,7 +28,14 @@ function positions($member = null){
   $smarty -> assign('players',$players);
   $smarty -> display('templateEngine/templates/positions_adm.tpl');
 }
-
+function editPlayer($member = null){
+  $positions=getPositions();
+  $players= getPlayers();
+  $smarty = new Smarty();
+  $smarty -> assign('positions',$positions);
+  $smarty -> assign('players',$players);
+  $smarty -> display('templateEngine/templates/rename.tpl');
+}
 
 function addPlayer(){
   insertPlayer($_GET["name"],$_GET["surname"],$_GET["nickname"],$_GET["id_position"],);
@@ -38,11 +45,18 @@ function addPosition(){
   insertPosition($_GET["name"]);
   header("Location: positions");
 }
+/*
+function editPlayer(){
+
+  
+  insertPlayer($_GET["name"],$_GET["surname"],$_GET["nickname"],$_GET["id_position"]);
+  header("Location: positions");
+}
 
 function removePlayer($params){
   deletePlayer($params[0]);
   header("Location: ../home");
-}
+}*/
 function removePosition($params){
   deletePosition($params[0]);
   header("Location: ../positions");

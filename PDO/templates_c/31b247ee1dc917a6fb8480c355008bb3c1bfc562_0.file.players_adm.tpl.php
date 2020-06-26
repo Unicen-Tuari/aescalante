@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-24 21:59:15
+/* Smarty version 3.1.34-dev-7, created on 2020-06-26 05:43:51
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\players_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ef3b093676c19_05266674',
+  'unifunc' => 'content_5ef56ef7c34057_61400068',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '31b247ee1dc917a6fb8480c355008bb3c1bfc562' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\players_adm.tpl',
-      1 => 1593028753,
+      1 => 1593141993,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templateEngine/templates/footer_adm.tpl' => 1,
   ),
 ),false)) {
-function content_5ef3b093676c19_05266674 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef56ef7c34057_61400068 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -134,7 +134,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['player']->value) {
                     <td>
                     </td>
                     <td>
-                        <a href="#"><span data-feather="edit"></span>Editar</a>
+                        <a href="editPlayer/<?php echo $_smarty_tpl->tpl_vars['player']->value['id_player'];?>
+"><span data-feather="edit"></span>Editar</a>
                         <a href="deletePlayer/<?php echo $_smarty_tpl->tpl_vars['player']->value['id_player'];?>
 "><span data-feather="trash"></span>Elimitar</a>
                         <a href="#"><span data-feather="check"></span>Terminar</a>

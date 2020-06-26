@@ -5,6 +5,7 @@ define('BASE_URL','//'.$_SERVER['SERVER_NAME'] .':'. $_SERVER['SERVER_PORT']. di
     public static $PARAMS = "params";
     public static $ACTIONS = [  
         "addPlayer" => 'addPlayer',
+        "editPlayer" => 'editPlayer',
         'addPosition' => 'addPosition',
         "deletePlayer"=>'removePlayer',
         "deletePosition"=>'removePosition',

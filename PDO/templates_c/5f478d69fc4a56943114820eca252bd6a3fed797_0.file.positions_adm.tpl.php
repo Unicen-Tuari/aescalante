@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-26 05:15:31
+/* Smarty version 3.1.34-dev-7, created on 2020-06-26 05:22:56
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\positions_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ef56853f19a66_15237262',
+  'unifunc' => 'content_5ef56a10f37289_15325245',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5f478d69fc4a56943114820eca252bd6a3fed797' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\positions_adm.tpl',
-      1 => 1593141330,
+      1 => 1593141401,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templateEngine/templates/footer_adm.tpl' => 1,
   ),
 ),false)) {
-function content_5ef56853f19a66_15237262 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef56a10f37289_15325245 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -54,7 +54,7 @@ $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl",
     </form>
 
     <h2>Posiciones</h2>
-    <div class="table-responsive">
+    <div class="table-responsive" >
         <table class="table table-striped table-sm">
             <thead>
                 <tr>

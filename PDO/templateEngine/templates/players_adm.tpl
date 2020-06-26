@@ -88,7 +88,7 @@
                     <td>
                     </td>
                     <td>
-                        <a href="#"><span data-feather="edit"></span>Editar</a>
+                        <a href="editPlayer/{$player['id_player']}"><span data-feather="edit"></span>Editar</a>
                         <a href="deletePlayer/{$player['id_player']}"><span data-feather="trash"></span>Elimitar</a>
                         <a href="#"><span data-feather="check"></span>Terminar</a>
                     </td>
