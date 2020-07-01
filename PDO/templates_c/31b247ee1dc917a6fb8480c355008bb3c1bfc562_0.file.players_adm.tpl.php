@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-26 05:43:51
+/* Smarty version 3.1.34-dev-7, created on 2020-06-27 21:31:15
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\players_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ef56ef7c34057_61400068',
+  'unifunc' => 'content_5ef79e838bf946_06273790',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '31b247ee1dc917a6fb8480c355008bb3c1bfc562' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\players_adm.tpl',
-      1 => 1593141993,
+      1 => 1593286009,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templateEngine/templates/footer_adm.tpl' => 1,
   ),
 ),false)) {
-function content_5ef56ef7c34057_61400068 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef79e838bf946_06273790 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -42,12 +42,12 @@ $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl",
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" name="name" id="name">
+                <input type="text" class="form-control" name="name" id="name"required>
                 <p id="note">Los campos Nombre y Apellido tiene que ser de tipo 'string'. </p>
             </div>
             <div class="form-group col-md-5">
                 <label for="apellido">Apellido</label>
-                <input type="text" class="form-control" name="surname" id="surname">
+                <input type="text" class="form-control" name="surname" id="surname" required>
             </div>
         </div>
 
@@ -77,9 +77,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 </div>
             </div>
-
             <div class="form-group col-md-3">
-                
                 <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Ej: La Pulga">
                 <label for="apodo">Apodo</label>
             </div>

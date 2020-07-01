@@ -1,29 +1,28 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-26 05:22:56
+/* Smarty version 3.1.34-dev-7, created on 2020-06-27 21:31:14
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\positions_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ef56a10f37289_15325245',
+  'unifunc' => 'content_5ef79e82ce6410_06343806',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5f478d69fc4a56943114820eca252bd6a3fed797' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\positions_adm.tpl',
-      1 => 1593141401,
+      1 => 1593285946,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:templateEngine/templates/header_adm.tpl' => 1,
-    'file:templateEngine/templates/posit_player.tpl' => 1,
     'file:templateEngine/templates/footer_adm.tpl' => 1,
   ),
 ),false)) {
-function content_5ef56a10f37289_15325245 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef79e82ce6410_06343806 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -47,7 +46,6 @@ $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl",
                 <p id="note">El campo Nombre tiene que ser de tipo 'string'. </p>
             </div>
         </div>
-
         <div class="form-group">
             <input class="btn btn-primary" type="submit" value="Agregar Posicion">
         </div>
@@ -78,8 +76,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['position']->value) {
 </p>
                             </a>
                         <div><a href="" class="list-group-item list-group-item-action"><p> 
-                            <!-- <?php $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/posit_player.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
-?> -->
                             <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['players']->value, 'player');
 if ($_from !== null) {

@@ -20,7 +20,6 @@
                 <p id="note">El campo Nombre tiene que ser de tipo 'string'. </p>
             </div>
         </div>
-
         <div class="form-group">
             <input class="btn btn-primary" type="submit" value="Agregar Posicion">
         </div>
@@ -45,7 +44,6 @@
                                 <p>{$position['name']}</p>
                             </a>
                         <div><a href="" class="list-group-item list-group-item-action"><p> 
-                            <!-- {include file="templateEngine/templates/posit_player.tpl"} -->
                             {foreach from=$players item=player}
                             {if $player['id_position'] eq $position['id_position']}
                             <p>{$player['name']} {$player['surname']} </p>

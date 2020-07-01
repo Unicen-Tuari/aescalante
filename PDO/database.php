@@ -6,6 +6,12 @@ function getPlayers(){
     $sentencia->execute();
     return $sentencia->fetchAll();
 }
+function getPlayer($id_player){
+    $db = new PDO('mysql:host=localhost;dbname=the_new_sensation; charset=utf8','root','');
+    $sentencia = $db->prepare("SELECT * FROM player where id_player=?");
+    $sentencia->execute(array($id_player));
+    return $sentencia->fetch();
+}
 
 function getPositions(){
     $db = new PDO('mysql:host=localhost;dbname=the_new_sensation; charset=utf8','root','');
@@ -23,15 +29,22 @@ function getPlayerPositions($id_position){
 function insertPlayer($name,$surname,$nickname,$id_position){
     $db = new PDO('mysql:host=localhost;dbname=the_new_sensation; charset=utf8','root','');
     $sentencia = $db->prepare("INSERT INTO player(name,surname,nickname,id_position) VALUES(?,?,?,?)");
-    if( (($name && $surname) != '') /*&& (is_string($name))*/ ){
     $sentencia->execute(array($name,$surname,$nickname,$id_position));
-    }
+}
+
+
+function renamePlayer($id_player,$name,$surname,$nickname,$id_position){
+    $db = new PDO('mysql:host=localhost;dbname=the_new_sensation; charset=utf8','root','');
+    $sentencia = $db->prepare("UPDATE `player` SET `name` = '?', `surname` = '?', `nickname` = '?', `id_position` = '?' WHERE `player`.`id_player` = ?");
+    $sentencia->execute(array($name,$surname,$nickname,$id_position,$id_player));
+    //print_r(array($name,$surname,$nickname,$id_position,$id_player));   
 }
 
 function insertPosition($name){
     $db = new PDO('mysql:host=localhost;dbname=the_new_sensation; charset=utf8','root','');
-    $sentencia = $db->prepare("INSERT INTO position(id_position,name) VALUES(?,?)");
+    $sentencia = $db->prepare("`INSERT INTO position(name) VALUES(?)`");
     $sentencia->execute(array($name));
+    
 }
 
 function deletePlayer($id_player){

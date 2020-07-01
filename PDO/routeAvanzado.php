@@ -1,6 +1,10 @@
 <?php
 require_once "ConfigApp.php";
-require_once "panel_control.php";
+//require_once "panel_control.php";
+require_once "NewView.php";
+require_once "NewModel.php";
+require_once "NewController.php";
+
 //require_once "operandos.php";
 //require_once "about.php";
 
@@ -23,18 +27,26 @@ if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
 
     $params = $url_data[ConfigApp::$PARAMS];
 
-    $methodName = ConfigApp::$ACTIONS[$actionName];
+    $controllerMetodo = explode('#', ConfigApp::$ACTIONS[$actionName]);
+    $controller= new $controllerMetodo[0];
+    $methodName = $controllerMetodo[1];
+
+    //$methodName = ConfigApp::$ACTIONS[$actionName];
 
     if(isset($params) && $params != null){
        
-        echo $methodName($params);
+        echo $controller->$methodName($params);
 
     }else{
-        echo $methodName();
+
+        echo $controller->$methodName();
     }
 
 }else{
 
-   echo home();
+   echo $controller->home();
 }
+
+
+
 ?>

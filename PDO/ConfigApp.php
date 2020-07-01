@@ -4,13 +4,14 @@ define('BASE_URL','//'.$_SERVER['SERVER_NAME'] .':'. $_SERVER['SERVER_PORT']. di
     public static $ACTION = "action";
     public static $PARAMS = "params";
     public static $ACTIONS = [  
-        "addPlayer" => 'addPlayer',
-        "editPlayer" => 'editPlayer',
-        'addPosition' => 'addPosition',
-        "deletePlayer"=>'removePlayer',
-        "deletePosition"=>'removePosition',
-        'home' => 'home',
-        'positions'=>'positions'
+        "addPlayer" => 'NewController#addPlayer',
+        "editPlayer" => 'NewController#editPlayer',
+        "editFinish" => 'NewController#editFinish',
+        'addPosition' => 'NewController#addPosition',
+        "deletePlayer"=>'NewController#removePlayer',
+        "deletePosition"=>'NewController#removePosition',
+        'home' => 'NewController#home',
+        'positions'=>'NewController#positions'
     ];
 }
 

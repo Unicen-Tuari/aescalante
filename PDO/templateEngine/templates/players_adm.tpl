@@ -16,12 +16,12 @@
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" name="name" id="name">
+                <input type="text" class="form-control" name="name" id="name"required>
                 <p id="note">Los campos Nombre y Apellido tiene que ser de tipo 'string'. </p>
             </div>
             <div class="form-group col-md-5">
                 <label for="apellido">Apellido</label>
-                <input type="text" class="form-control" name="surname" id="surname">
+                <input type="text" class="form-control" name="surname" id="surname" required>
             </div>
         </div>
 
@@ -39,9 +39,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 </div>
             </div>
-
             <div class="form-group col-md-3">
-                
                 <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Ej: La Pulga">
                 <label for="apodo">Apodo</label>
             </div>
