@@ -1,5 +1,5 @@
 <?php
-
+/*
 function getPlayers(){
     $db = new PDO('mysql:host=localhost;dbname=the_new_sensation; charset=utf8','root','');
     $sentencia = $db->prepare("SELECT * FROM player");
@@ -57,5 +57,5 @@ function deletePosition($id_position){
     $sentencia = $db->prepare("DELETE FROM position WHERE id_position=?");
     $sentencia->execute(array($id_position));
 }
-
+*/
 ?>

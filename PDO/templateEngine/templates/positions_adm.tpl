@@ -7,12 +7,12 @@
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
             </div>
-            <button type="button" class="btn btn-success">Vista Usuario</button>
+            <a href="index" class="btn btn-success" role="button" aria-pressed="true">Vista usuario</a>
         </div>
     </div>
     <h2>Agregar nueva posición</h2>
 
-    <form action="addPosition" mothod="GET">
+    <form action="addPosition" method="GET">
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="nombre">Nombre posición</label>

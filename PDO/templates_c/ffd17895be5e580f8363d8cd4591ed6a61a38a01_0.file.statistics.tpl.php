@@ -1,38 +1,31 @@
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>La Nueva Sensacion FC </title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="icon" type="" href="images/icono.png">
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-07-02 19:12:44
+  from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\statistics.tpl' */
 
-  </head>
-  <body>
-        <header>
-          <div class="title" >
-                <h1>  La Nueva Sensacion FC </h1>
-          </div>
-                  <div class="logotipo">
-                  <img src="images/icono.png" width="8%" alt="">
-                  </div>
-                  <nav>
-                      <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="statistics.html">Estadisticas</a></li>
-                            <li><a href="players.html">Jugadores</a></li>
-
-                      </ul>
-                  </nav>
-
-        </header>
-        <section class="main">
-          <section class="articles">
-            <article>
-
-              <p>
-                Este sitio esta dedicado al equipo de fútbol sintetico "La Nueva Sensacion". Creado
-                por un grupo de amigos. Somos parecido a la seleccion Argentina, perdimos 3 finales seguidas.
-              </p>
-            </article>
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5efe158c55a0a8_22503964',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'ffd17895be5e580f8363d8cd4591ed6a61a38a01' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\statistics.tpl',
+      1 => 1593709962,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:templateEngine/templates/header.tpl' => 1,
+    'file:templateEngine/templates/table_positions.tpl' => 1,
+    'file:templateEngine/templates/footer.tpl' => 1,
+  ),
+),false)) {
+function content_5efe158c55a0a8_22503964 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
             <article>
               <ul class="Torneo19">
                 <li class="fecha"><a href="#fecha1">Fecha 1</li></a>
@@ -155,7 +148,7 @@
                 La segunda etapa comenzó con unos rojos ofensivos en busca del gol rápido que les de tranquilidad para el resto de los minutos del cotejo. Fabio Iglesias realizó una linda jugada individual para luego rematar de media distancia para mandar la pelota al fondo de la red ( 2 – 1 ) . Llegamos al minuto diez y llegó un corner para la nueva sensacion, el encargado de ejecutarlo fue Enzo Tolosa, la pelota fue al área y el encargado de mandarla al fondo de la red fue Paez ( 2 – 2 ). Luego de esto el cotejo se emparejó y se vivió a mil revoluciones, de acá para allá casi sin mediocampo por parte de ambos planteles.
                 Antes del final los negros tuvo la oportunidad de marcar, Enzo Tolosa se animó de volea y la clava al segundo palo (3 – 2). En el último minuto de juego llegó el empate para Nosaka luego de muchos rebotes cerca del área rival. Fabio Iglesias abrió el pie y anotó a favor de su equipo (3-3).
                 Figura: Nicolas ferraggine (Nosaka): Fue el jugador más determinante del partido, una garantía en la tanda de penales.
-                <img src="images/final_nueva.jpg" alt="Jugadores">
+                <img src="../images/final_nueva.jpg" alt="Jugadores">
 
               </p>
               </div>
@@ -164,152 +157,11 @@
 
           </section>
           <aside>
-            <h3>Categoria "B" Torneo de Ferro</h3>
-            <table>
-              <thead>
-              <tr>
-                  <th>Equipo</th>
-                  <th>P.J</th>
-                  <th>P.G</th>
-                  <th>P.P</th>
-                  <th>P.E</th>
-                  <th>GF</th>
-                  <th>GC</th>
-                  <th>Pts</th>
-              </tr>
-            </thead>
-              <tr>
-                  <td>Vamos con esa fc</td>
-                  <td>3</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>15</td>
-                  <td>7</td>
-                  <td>9</td>
-              </tr>
-              <tr>
-                  <td>A la cancha</td>
-                  <td>3</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>13</td>
-                  <td>7</td>
-                  <td>7</td>
-              </tr>
-              <tr>
-                  <td>La banda de la Union</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>10</td>
-                  <td>2</td>
-                  <td>6</td>
-              </tr>
-              <tr>
-                  <td>El rayo</td>
-                  <td>3</td>
-                  <td>2</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>15</td>
-                  <td>9</td>
-                  <td>6</td>
-              </tr>
-              <tr>
-                  <td>Locos por el fútbol</td>
-                  <td>3</td>
-                  <td>2</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>10</td>
-                  <td>7</td>
-                  <td>6</td>
-              </tr>
-              <tr>
-                  <td>Deportivo Santani</td>
-                  <td>3</td>
-                  <td>2</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>10</td>
-                  <td>11</td>
-                  <td>6</td>
-              </tr>
-              <tr>
-                  <td>Dame la noche</td>
-                  <td>3</td>
-                  <td>1</td>
-                  <td>1</td>
-                  <td>1</td>
-                  <td>8</td>
-                  <td>12</td>
-                  <td>4</td>
-              </tr>
-              <tr>
-                  <td>Pack-man</td>
-                  <td>3</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>11</td>
-                  <td>15</td>
-                  <td>3</td>
-              </tr>
-              <tr>
-                  <td>R.P.M</td>
-                  <td>3</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>9</td>
-                  <td>12</td>
-                  <td>3</td>
-              </tr>
-              <tr class="nosotros">
-                  <td >La Nueva Sensacion</td>
-                  <td>3</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>8</td>
-                  <td>9</td>
-                  <td>3</td>
-              </tr>
-              <tr>
-                  <td>Electricos</td><td>2</td> <td>1</td> <td>1</td>  <td>0</td>  <td>6</td>  <td>5</td>  <td>3</td>
-              </tr>
-              <tr>
-                  <td>Nosaka fc</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>2</td>
-                  <td>1</td>
-                  <td>4</td>
-                  <td>11</td>
-                  <td>1</td>
-              </tr>
-              <tr>
-                  <td>Equipinho</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>6</td>
-                  <td>16</td>
-                  <td>0</td>
-              </tr>
-            </table>
-            <h4>Titulares último partido</h4>
-            <img id="last_match" src="images/ultimo_partido.png" alt="Ultimo_Partido" >
+            <?php $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/table_positions.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+         <h4>Titulares último partido</h4>
+            <img id="last_match" src="../images/ultimo_partido.png" alt="Ultimo_Partido" >
 
-          </aside>
-        </section>
-        <footer>
-          <p>La Nueva 2020</p>
-        </footer>
-
-</body>
-</html>
+        <?php $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}

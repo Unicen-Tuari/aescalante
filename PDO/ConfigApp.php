@@ -7,11 +7,17 @@ define('BASE_URL','//'.$_SERVER['SERVER_NAME'] .':'. $_SERVER['SERVER_PORT']. di
         "addPlayer" => 'NewController#addPlayer',
         "editPlayer" => 'NewController#editPlayer',
         "editFinish" => 'NewController#editFinish',
-        'addPosition' => 'NewController#addPosition',
+        'addPosition' => 'PositionsController#addPosition',
         "deletePlayer"=>'NewController#removePlayer',
-        "deletePosition"=>'NewController#removePosition',
-        'home' => 'NewController#home',
-        'positions'=>'NewController#positions'
+        "deletePosition"=>'PositionsController#removePosition',
+        'home' => 'NewController#Home',
+        'index' => 'NewController#index',
+        'players' => 'NewController#players',
+        'statistics' => 'NewController#statistics',
+        'positions'=>'PositionsController#positions',
+        'marckedPlayer'=>'NewController#marckedPlayer',
+        'login'=>'UserController#login',
+        ''=>'NewController#index'
     ];
 }
 

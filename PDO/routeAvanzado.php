@@ -4,6 +4,8 @@ require_once "ConfigApp.php";
 require_once "NewView.php";
 require_once "NewModel.php";
 require_once "NewController.php";
+require_once "PositionsController.php";
+require_once "UserController.php";
 
 //require_once "operandos.php";
 //require_once "about.php";
@@ -44,7 +46,7 @@ if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
 
 }else{
 
-   echo $controller->home();
+    header("Location: ../index");
 }
 
 

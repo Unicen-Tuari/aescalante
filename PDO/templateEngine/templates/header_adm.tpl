@@ -11,7 +11,7 @@
     <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
     <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
 
-    <link rel="icon" type="" href="/icono/icono.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/icono_adm.png">
 
     <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 
@@ -23,7 +23,7 @@
 
 <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">La Nueva Sensación FC</a>
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" >La Nueva Sensación FC</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
             data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

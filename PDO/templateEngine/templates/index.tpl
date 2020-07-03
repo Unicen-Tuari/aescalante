@@ -1,31 +1,4 @@
-<?php
-/* Smarty version 3.1.34-dev-7, created on 2020-07-02 23:49:07
-  from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\index.tpl' */
-
-/* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5efe56533b7291_53703445',
-  'has_nocache_code' => false,
-  'file_dependency' => 
-  array (
-    '49b9a608728e1213577004363f1040bfe59056c2' => 
-    array (
-      0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\index.tpl',
-      1 => 1593726546,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-    'file:templateEngine/templates/header.tpl' => 1,
-    'file:templateEngine/templates/table_positions.tpl' => 1,
-    'file:templateEngine/templates/footer.tpl' => 1,
-  ),
-),false)) {
-function content_5efe56533b7291_53703445 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
+{include file="templateEngine/templates/header.tpl"}
             <article>
               <h3>Ultimo partido:<br>La Nueva Sensacion vs Deportivo Santani </h3>
               <p id="partido_index"> Un segundo tiempo memorable
@@ -55,8 +28,7 @@ El envión siguió y a los quince llegó el doblete para los de casaca negra y r
 
           </section>
           <aside>
-            <?php $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/table_positions.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
+            {include file="templateEngine/templates/table_positions.tpl"}
             <form class="formulario">
               <p>Recibir correo antes de cada partido</p>
             <input type="text" name="" placeholder="Nombre">
@@ -92,6 +64,4 @@ El envión siguió y a los quince llegó el doblete para los de casaca negra y r
             </form>
           </div>
        
-<?php $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-}
-}
+{include file="templateEngine/templates/footer.tpl"}

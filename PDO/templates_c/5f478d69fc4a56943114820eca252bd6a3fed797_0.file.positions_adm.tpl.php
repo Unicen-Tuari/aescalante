@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-27 21:31:14
+/* Smarty version 3.1.34-dev-7, created on 2020-07-02 23:46:22
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\positions_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ef79e82ce6410_06343806',
+  'unifunc' => 'content_5efe55ae30c976_17361212',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5f478d69fc4a56943114820eca252bd6a3fed797' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\positions_adm.tpl',
-      1 => 1593285946,
+      1 => 1593726380,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templateEngine/templates/footer_adm.tpl' => 1,
   ),
 ),false)) {
-function content_5ef79e82ce6410_06343806 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efe55ae30c976_17361212 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -33,12 +33,12 @@ $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl",
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
             </div>
-            <button type="button" class="btn btn-success">Vista Usuario</button>
+            <a href="index" class="btn btn-success" role="button" aria-pressed="true">Vista usuario</a>
         </div>
     </div>
     <h2>Agregar nueva posición</h2>
 
-    <form action="addPosition" mothod="GET">
+    <form action="addPosition" method="GET">
         <div class="form-row">
             <div class="form-group col-md-5">
                 <label for="nombre">Nombre posición</label>

@@ -1,9 +1,10 @@
 <?php
+
 require_once("NewView.php");
 require_once("NewModel.php");
 require_once("PositionsModel.php");
 
-class NewController{
+class PositionsController{
 
     private $view;
     private $model;
@@ -13,53 +14,34 @@ class NewController{
         $this->view = new NewView();
         $this->model = new NewModel();
         $this->p_model = new PositionsModel();
-
     }
-
     function Home($member = null){
         $players = $this->model->getPlayers(); 
         $positions = $this->p_model->getPositions();           
         $this->view->ShowHome($players,$positions);
     }
-    
-    function index($member = null){
-        $this->view->ShowIndex();
-    }
-    function players($member = null){
-        $this->view->ShowTeam();
-    }
-    function statistics($member = null){
-        $this->view->ShowStatistics();
-    }
-
-    function addPlayer(){
-        $this->model->insertPlayer($_GET["name"],$_GET["surname"],$_GET["nickname"],$_GET["id_position"],);
-        header("Location: home");
-    }
-    function editPlayer($params){
+    function positions($member = null){
         $positions=$this->p_model->getPositions();
-        $id_player = $params[0];
-        $player = $this->model->getPlayer($id_player);
-        $this->view->ShowFormEdit($player,$positions);
+        $players= $this->model->getPlayers();
+        $this->view->ShowPositions($positions,$players);
       }
-      
       function editFinish(){
         // print $_GET['id_player'],$_GET["surname"],$_GET["nickname"],$_GET["id_position"]);
         $this->model->renamePlayer($_GET['id_player'],$_GET["name"],$_GET["surname"],$_GET["nickname"],$_GET["id_position"]);
         header("Location: home");
       }
     
-    function marckedPlayer($params){
-        $this->model->markFinished($params[0]);
-        header("Location: ../home");
+      function addPosition(){
+        $this->p_model->insertPosition($_GET['name']);
+        header("Location: positions");
     }
-    function removePlayer($params){
-        $this->model->deletePlayer($params[0]);
-        header("Location: ../home");
+    function removePosition($params){
+        $this->p_model->deletePosition($params[0]);
+        header("Location: ../positions");
     }
-    
 
 }
+
 
 
 

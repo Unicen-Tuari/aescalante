@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-06-26 05:11:40
+/* Smarty version 3.1.34-dev-7, created on 2020-07-02 07:04:10
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\header_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ef5676cbf2d74_26508165',
+  'unifunc' => 'content_5efd6acae13804_80240796',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '417879e0a53c834dfeed9c268bf422bb91b2563a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\header_adm.tpl',
-      1 => 1593141099,
+      1 => 1593666249,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ef5676cbf2d74_26508165 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efd6acae13804_80240796 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -34,7 +34,7 @@ function content_5ef5676cbf2d74_26508165 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
     <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
 
-    <link rel="icon" type="" href="/icono/icono.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/icono_adm.png">
 
     <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 
@@ -47,7 +47,7 @@ function content_5ef5676cbf2d74_26508165 (Smarty_Internal_Template $_smarty_tpl)
 
 <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">La Nueva Sensación FC</a>
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" >La Nueva Sensación FC</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
             data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

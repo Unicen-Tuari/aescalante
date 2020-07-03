@@ -7,7 +7,7 @@
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
             </div>
-            <button type="button" class="btn btn-success">Vista Usuario</button>
+            <a href="index" class="btn btn-success" role="button" aria-pressed="true">Vista usuario</a>
         </div>
     </div>
     <h2>Sumar jugador al plantel</h2>
@@ -60,7 +60,7 @@
                     <th>Apellido</th>
                     <th>Posicion</th>
                     <th>Apodo</th>
-                    <th>Condicion</th>
+                    <th>Editado</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -84,11 +84,15 @@
 
                     </td>
                     <td>
+                        {if $player['edit']}
+                        <span data-feather="check"></span>                        
+                        {else} <span data-feather="slash"></span> 
+                        {/if}
                     </td>
                     <td>
                         <a href="editPlayer/{$player['id_player']}"><span data-feather="edit"></span>Editar</a>
                         <a href="deletePlayer/{$player['id_player']}"><span data-feather="trash"></span>Elimitar</a>
-                        <a href="#"><span data-feather="check"></span>Terminar</a>
+                        <a href="marckedPlayer/{$player['id_player']}"><span data-feather="check"></span>Editado</a>
                     </td>
                 </tr>
                 {/foreach}

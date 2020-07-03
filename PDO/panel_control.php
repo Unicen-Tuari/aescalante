@@ -1,4 +1,4 @@
-<?php 
+<?php /*
   require_once "database.php";
   require_once ('templateEngine/libs/Smarty.class.php');
 
@@ -18,7 +18,7 @@ function home($member = null){
   $smarty -> assign('players',$players);
   $smarty -> assign('positions',$positions);
   $smarty -> display('templateEngine/templates/positions_adm.tpl');
-}*/
+}
 
 function positions($member = null){
   $positions=getPositions();
@@ -40,7 +40,7 @@ function editPlayer($params){
 }
 
 function editFinish(){
-  /* print $_GET['id_player'],$_GET["surname"],$_GET["nickname"],$_GET["id_position"]);*/
+  /* print $_GET['id_player'],$_GET["surname"],$_GET["nickname"],$_GET["id_position"]);
   renamePlayer($_GET['id_player'],$_GET["name"],$_GET["surname"],$_GET["nickname"],$_GET["id_position"]);
   header("Location: home");
 }
@@ -63,6 +63,7 @@ function removePosition($params){
   deletePosition($params[0]);
   header("Location: ../positions");
 }
+*/
 ?>
 
 

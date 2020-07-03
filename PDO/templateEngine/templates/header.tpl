@@ -1,27 +1,4 @@
-<?php
-/* Smarty version 3.1.34-dev-7, created on 2020-07-03 00:23:49
-  from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\header.tpl' */
-
-/* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5efe5e75b7a9a1_70802385',
-  'has_nocache_code' => false,
-  'file_dependency' => 
-  array (
-    'f6fc389dfd8775d138d02e61e871ee791194fd0b' => 
-    array (
-      0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\header.tpl',
-      1 => 1593728628,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-  ),
-),false)) {
-function content_5efe5e75b7a9a1_70802385 (Smarty_Internal_Template $_smarty_tpl) {
-?><html>
+<html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>La Nueva Sensacion FC </title>
@@ -59,5 +36,4 @@ function content_5efe5e75b7a9a1_70802385 (Smarty_Internal_Template $_smarty_tpl)
                 Este sitio esta dedicado al equipo de fútbol sintetico "La Nueva Sensacion". Creado
                 por un grupo de amigos. Somos parecido a la seleccion Argentina, perdimos 3 finales seguidas.
               </p>
-            </article><?php }
-}
+            </article>
