@@ -18,11 +18,13 @@
               </div>
               <div class="datos_jugadores">
               <ul><a name="escalante"></a>
-                <li id="Name_player">Nombre, Apellido:Agustin, Escalante</li>
-                <li>Posicion:Delantero/Mediocampista</li>
-                <li>Número:7</li>
-                <li>Apodo:Esca</li>
-                <li>Redes Sociales:<a href="https://www.instagram.com/aguss_escalante/"target="_blank">Instagram</a></li>
+                {foreach from=$players item=player}
+                <li id="Name_player">Apellido, Nombre: {$player['name']}, {$player['surname']}  </li>
+                <li>Posicion : {$player['name_position']}</li>
+                <li>Número : {$player['number']}</li>
+                <li>Apodo : {$player['nickname']}</li>
+                <li>Redes Sociales:--</li>
+              {/foreach}
               </ul>
               <br>
               

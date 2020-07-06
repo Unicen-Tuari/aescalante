@@ -12,5 +12,12 @@ class UserView {
     function Showlogin(){
         $this->smarty->display('templateEngine/templates/login.tpl');
       }
+    function ShowSignIn(){
+        $this->smarty->display('templateEngine/templates/signin.tpl');
+      }
+    function ShowRegistry(){
+        $this->smarty->display('templateEngine/templates/login.tpl');
+      }
+
 }
 ?>

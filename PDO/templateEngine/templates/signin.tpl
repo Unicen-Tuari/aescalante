@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Acceso LNS</title>
+    <title>Registro LNS</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="icon" type="" href="../images/icono.png">
   </head>
@@ -10,17 +10,15 @@
 
     <div class="login-box">
       <img src="../images/hx.jpg" class="avatar" alt="Avatar Image">
-      <h1>Acceder</h1>
-      <form action="access" method="POST">
+      <h1>Regístrate</h1>
+      <form action="createUser" method="POST">
         <label for="email">Mail</label>
-        <input type="email" id="mail" name="mail" placeholder="Enter Username" required>
+        <input type="email" id="email" name="email" placeholder="Enter Username" required>
         <label for="password">Contraseña</label>
         <input type="password" id="password" name="password" placeholder="Enter Password" required>
-
-        <input type="submit" value="Iniciar">
-
-        <a href="registry">Regístrate</a><br>
-        <a href="index">Vista Usuario</a><br>
+        <input type="submit" value="Crear">
+        
+        <a href="login">Ir a acceso</a><br>
       </form>
     </div>
   </body>

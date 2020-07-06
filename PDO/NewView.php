@@ -30,7 +30,9 @@ class NewView {
       function ShowIndex(){
         $this->smarty->display('templateEngine/templates/index.tpl');
       }
-      function ShowTeam(){
+      function ShowTeam($players,$positions){
+        $this->smarty -> assign('players',$players);
+        $this->smarty -> assign('positions',$positions);
         $this->smarty->display('templateEngine/templates/players.tpl');
 
       }
@@ -41,9 +43,6 @@ class NewView {
 
 
 }
-
-
-
 
 
 ?>

@@ -43,6 +43,10 @@
                 <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Ej: La Pulga">
                 <label for="apodo">Apodo</label>
             </div>
+            <div class="form-group col-md-3">
+                <input type="text" class="form-control" id="number" name="number" placeholder="--">
+                <label for="number">Número</label>
+            </div>
         </div>
         <div class="form-group">
             <input class="btn btn-primary" type="submit" value="Agregar Jugador">
@@ -60,6 +64,7 @@
                     <th>Apellido</th>
                     <th>Posicion</th>
                     <th>Apodo</th>
+                    <th>Número</th>
                     <th>Editado</th>
                     <th>Acciones</th>
                 </tr>
@@ -77,10 +82,14 @@
                         <p>{$player['surname']}</p>
                     </td>
                     <td>
-                        <p>{$positions[$player['id_position']-2]['name']} </p>
+                        <p>{$player['name_position']} </p>
                     </td>
                     <td>
                         <p>{$player['nickname']} </p>
+
+                    </td>
+                    <td>
+                        <p>{$player['number']} </p>
 
                     </td>
                     <td>

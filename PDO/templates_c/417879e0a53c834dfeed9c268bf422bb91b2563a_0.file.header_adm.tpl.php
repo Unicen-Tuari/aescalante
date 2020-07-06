@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-07-02 07:04:10
+/* Smarty version 3.1.34-dev-7, created on 2020-07-04 22:56:09
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\header_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5efd6acae13804_80240796',
+  'unifunc' => 'content_5f00ece912c912_19084779',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '417879e0a53c834dfeed9c268bf422bb91b2563a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\header_adm.tpl',
-      1 => 1593666249,
+      1 => 1593896069,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5efd6acae13804_80240796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f00ece912c912_19084779 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -51,10 +51,10 @@ function content_5efd6acae13804_80240796 (Smarty_Internal_Template $_smarty_tpl)
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
             data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </bu tton>
+        </button>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" href="#">Sign out</a>
+                <a class="nav-link" href="logAut">Sign out</a>
             </li>
         </ul>
     </nav>

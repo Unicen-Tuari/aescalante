@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-07-03 00:13:18
+/* Smarty version 3.1.34-dev-7, created on 2020-07-06 19:49:13
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\players.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5efe5bfe2af111_87047117',
+  'unifunc' => 'content_5f03641938fa03_31369572',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42fd98c0eb23f1326734f115de73cb114e0334f1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\players.tpl',
-      1 => 1593727996,
+      1 => 1594057751,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templateEngine/templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5efe5bfe2af111_87047117 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f03641938fa03_31369572 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
             <article>
@@ -45,11 +45,25 @@ $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header.tpl", $_s
               </div>
               <div class="datos_jugadores">
               <ul><a name="escalante"></a>
-                <li id="Name_player">Nombre, Apellido:Agustin, Escalante</li>
-                <li>Posicion:Delantero/Mediocampista</li>
-                <li>Número:7</li>
-                <li>Apodo:Esca</li>
-                <li>Redes Sociales:<a href="https://www.instagram.com/aguss_escalante/"target="_blank">Instagram</a></li>
+                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['players']->value, 'player');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['player']->value) {
+?>
+                <li id="Name_player">Apellido, Nombre: <?php echo $_smarty_tpl->tpl_vars['player']->value['name'];?>
+, <?php echo $_smarty_tpl->tpl_vars['player']->value['surname'];?>
+  </li>
+                <li>Posicion : <?php echo $_smarty_tpl->tpl_vars['player']->value['name_position'];?>
+</li>
+                <li>Número : <?php echo $_smarty_tpl->tpl_vars['player']->value['number'];?>
+</li>
+                <li>Apodo : <?php echo $_smarty_tpl->tpl_vars['player']->value['nickname'];?>
+</li>
+                <li>Redes Sociales:--</li>
+              <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
               </ul>
               <br>
               

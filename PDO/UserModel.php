@@ -17,12 +17,9 @@ class UserModel{
 
             function getUser($email){
                 $sentencia = $this->db->prepare("SELECT * FROM `user` where `mail` = ?");
-                $sentencia->execute($email);
+                $sentencia->execute(array($email));
                 return $sentencia->fetch();
             }
 }
-
-
-
 
 ?>

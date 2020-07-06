@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-07-03 00:23:49
+/* Smarty version 3.1.34-dev-7, created on 2020-07-06 21:31:25
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5efe5e75b7a9a1_70802385',
+  'unifunc' => 'content_5f037c0d7f7572_34315778',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f6fc389dfd8775d138d02e61e871ee791194fd0b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\header.tpl',
-      1 => 1593728628,
+      1 => 1594063863,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5efe5e75b7a9a1_70802385 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f037c0d7f7572_34315778 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -36,9 +36,9 @@ function content_5efe5e75b7a9a1_70802385 (Smarty_Internal_Template $_smarty_tpl)
           </div>
                   <div class="logotipo">
                   <img src="../images/icono.png" width="8%" alt="">
-                   <div>
-                    <label>
-                      <a href="login"  id="button-login" role="button" aria-pressed="true">Vista usuario</a>                      </label>
+                  <label>
+                    <div class="vu">
+                      <a href="home"  id="boton_vu" role="button" aria-pressed="true">Vista Admin</a>                      </label>
                     </div>
                   </div>
                   <nav>

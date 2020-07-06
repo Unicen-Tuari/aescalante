@@ -13,9 +13,9 @@
           </div>
                   <div class="logotipo">
                   <img src="../images/icono.png" width="8%" alt="">
-                   <div>
-                    <label>
-                      <a href="login"  id="button-login" role="button" aria-pressed="true">Vista usuario</a>                      </label>
+                  <label>
+                    <div class="vu">
+                      <a href="home"  id="boton_vu" role="button" aria-pressed="true">Vista Admin</a>                      </label>
                     </div>
                   </div>
                   <nav>

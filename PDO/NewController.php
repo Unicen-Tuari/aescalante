@@ -14,26 +14,22 @@ class NewController{
         $this->model = new NewModel();
         $this->p_model = new PositionsModel();
 
+         session_start();
+        if(!isset($_SESSION["nombre"])){
+            header ("Location: login" );
+            die();
+        }
+
     }
 
     function Home($member = null){
-        $players = $this->model->getPlayers(); 
+        $players = $this->model->getPlayers();
         $positions = $this->p_model->getPositions();           
         $this->view->ShowHome($players,$positions);
     }
     
-    function index($member = null){
-        $this->view->ShowIndex();
-    }
-    function players($member = null){
-        $this->view->ShowTeam();
-    }
-    function statistics($member = null){
-        $this->view->ShowStatistics();
-    }
-
     function addPlayer(){
-        $this->model->insertPlayer($_GET["name"],$_GET["surname"],$_GET["nickname"],$_GET["id_position"],);
+        $this->model->insertPlayer($_GET["name"],$_GET["surname"],$_GET["nickname"],$_GET["number"],$_GET["id_position"],);
         header("Location: home");
     }
     function editPlayer($params){

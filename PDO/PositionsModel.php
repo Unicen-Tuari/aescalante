@@ -8,15 +8,10 @@ class PositionsModel{
                 $this->db = new PDO('mysql:host=localhost;dbname=the_new_sensation; charset=utf8','root','');
 
             }
-            function positions($member = null){
-                $positions=$this->p_model->getPositions();
-                $players= $this->model->getPlayers();
-                $this->view->ShowPositions($positions,$players);
-              }
             function getPositions(){
                 $sentencia = $this->db->prepare("SELECT * FROM position");
                 $sentencia->execute();
-                return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+                return $sentencia->fetchAll();
             }
             function insertPosition($name){
                 $sentencia = $this->db->prepare("INSERT INTO `position` (`name`) VALUES (?)");

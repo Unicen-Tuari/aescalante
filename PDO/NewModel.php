@@ -10,8 +10,11 @@ class NewModel{
 
             }
             function getPlayers(){
-                $sentencia = $this->db->prepare("SELECT * FROM player");
+                $sentencia = $this->db->prepare("SELECT p.*, po.name name_position
+                                                from player p 
+                                                join position po on (p.id_position = po.id_position)");
                 $sentencia->execute();
+                //$print_r()
                 return $sentencia->fetchAll(PDO::FETCH_ASSOC);
             }
 
@@ -26,9 +29,9 @@ class NewModel{
                 $sentencia->execute($id_position);
                 return $sentencia->fetchAll();
             }
-            function insertPlayer($name,$surname,$nickname,$id_position){
-                $sentencia = $this->db->prepare("INSERT INTO player(name,surname,nickname,id_position) VALUES(?,?,?,?)");
-                $sentencia->execute(array($name,$surname,$nickname,$id_position));
+            function insertPlayer($name,$surname,$nickname,$number,$id_position){
+                $sentencia = $this->db->prepare("INSERT INTO player(name,surname,nickname,number,id_position) VALUES(?,?,?,?,?)");
+                $sentencia->execute(array($name,$surname,$nickname,$number,$id_position));
             }
 
             function renamePlayer($id_player,$name,$surname,$nickname,$id_position){

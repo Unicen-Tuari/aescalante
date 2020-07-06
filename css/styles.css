@@ -223,6 +223,24 @@ label,input,form p,#boton{
   width: 90%;
   padding: 10px;
 }
+#boton_vu{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 200;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #88af92;
+  border-radius: 10px;
+  border: 2px solid #26272b;
+}
+.vu{
+  text-align: right;
+  width: 110%;
+}
+#boton_vu:hover{
+  color: #070707;
+    background-color: rgb(170, 100, 100);
+}
 input:focus{
   border: 2px solid #000;
 }

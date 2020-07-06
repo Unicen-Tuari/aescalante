@@ -11,13 +11,16 @@ define('BASE_URL','//'.$_SERVER['SERVER_NAME'] .':'. $_SERVER['SERVER_PORT']. di
         "deletePlayer"=>'NewController#removePlayer',
         "deletePosition"=>'PositionsController#removePosition',
         'home' => 'NewController#Home',
-        'index' => 'NewController#index',
-        'players' => 'NewController#players',
-        'statistics' => 'NewController#statistics',
+        'index' => 'vistaUsuarioController#index',
+        'players' => 'vistaUsuarioController#players',
+        'statistics' => 'vistaUsuarioController#statistics',
         'positions'=>'PositionsController#positions',
         'marckedPlayer'=>'NewController#marckedPlayer',
         'login'=>'UserController#login',
-        ''=>'NewController#index'
+        'access'=>'UserController#toAccess',
+        'registry'=>'UserController#signIn',
+        'createUser'=>'UserController#create',
+        'logAut'=>'UserController#logAut'
     ];
 }
 

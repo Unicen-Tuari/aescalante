@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-07-02 18:51:39
+/* Smarty version 3.1.34-dev-7, created on 2020-07-06 19:25:24
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\players_adm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5efe109becbc52_70720426',
+  'unifunc' => 'content_5f035e846061b1_56452278',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '31b247ee1dc917a6fb8480c355008bb3c1bfc562' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\players_adm.tpl',
-      1 => 1593708697,
+      1 => 1594056187,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templateEngine/templates/footer_adm.tpl' => 1,
   ),
 ),false)) {
-function content_5efe109becbc52_70720426 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f035e846061b1_56452278 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -81,6 +81,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Ej: La Pulga">
                 <label for="apodo">Apodo</label>
             </div>
+            <div class="form-group col-md-3">
+                <input type="text" class="form-control" id="number" name="number" placeholder="--">
+                <label for="number">Número</label>
+            </div>
         </div>
         <div class="form-group">
             <input class="btn btn-primary" type="submit" value="Agregar Jugador">
@@ -98,6 +102,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     <th>Apellido</th>
                     <th>Posicion</th>
                     <th>Apodo</th>
+                    <th>Número</th>
                     <th>Editado</th>
                     <th>Acciones</th>
                 </tr>
@@ -121,11 +126,16 @@ foreach ($_from as $_smarty_tpl->tpl_vars['player']->value) {
 </p>
                     </td>
                     <td>
-                        <p><?php echo $_smarty_tpl->tpl_vars['positions']->value[$_smarty_tpl->tpl_vars['player']->value['id_position']-2]['name'];?>
+                        <p><?php echo $_smarty_tpl->tpl_vars['player']->value['name_position'];?>
  </p>
                     </td>
                     <td>
                         <p><?php echo $_smarty_tpl->tpl_vars['player']->value['nickname'];?>
+ </p>
+
+                    </td>
+                    <td>
+                        <p><?php echo $_smarty_tpl->tpl_vars['player']->value['number'];?>
  </p>
 
                     </td>

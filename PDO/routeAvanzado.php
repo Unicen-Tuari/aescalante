@@ -1,14 +1,15 @@
 <?php
 require_once "ConfigApp.php";
-//require_once "panel_control.php";
 require_once "NewView.php";
 require_once "NewModel.php";
 require_once "NewController.php";
 require_once "PositionsController.php";
 require_once "UserController.php";
+require_once "UserModel.php";
+require_once "UserView.php";
+require_once "vistaUsuarioController.php";
 
-//require_once "operandos.php";
-//require_once "about.php";
+
 
 function parteURL($url){
     
@@ -46,7 +47,8 @@ if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
 
 }else{
 
-    header("Location: ../index");
+    header("Location: index");
+
 }
 
 
