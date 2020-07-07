@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-07-01 01:53:46
+/* Smarty version 3.1.34-dev-7, created on 2020-07-07 19:46:59
   from 'C:\xampp\htdocs\PW-2020\aescalante\PDO\templateEngine\templates\rename.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5efbd08a0f2156_06737926',
+  'unifunc' => 'content_5f04b513bebd21_48567656',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '808d07de71668178db5425d38a5ce82a807aff3d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\PW-2020\\aescalante\\PDO\\templateEngine\\templates\\rename.tpl',
-      1 => 1593561215,
+      1 => 1594143629,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templateEngine/templates/footer_adm.tpl' => 1,
   ),
 ),false)) {
-function content_5efbd08a0f2156_06737926 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f04b513bebd21_48567656 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templateEngine/templates/header_adm.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <form action="editFinish" method="GET">
