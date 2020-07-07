@@ -227,11 +227,12 @@ label,input,form p,#boton{
   text-decoration: none;
   padding: 10px;
   font-weight: 200;
-  font-size: 20px;
-  color: #ffffff;
-  background-color: #88af92;
-  border-radius: 10px;
+  font-size:18px;
+  color: #000;
+  background-color: rgba(48, 241, 0, 0.699);
+  border-radius: 09%;
   border: 2px solid #26272b;
+    outline: none;
 }
 .vu{
   text-align: right;
@@ -239,7 +240,9 @@ label,input,form p,#boton{
 }
 #boton_vu:hover{
   color: #070707;
-    background-color: rgb(170, 100, 100);
+    background-color: #38cc5d;
+    font-size: 20px;
+
 }
 input:focus{
   border: 2px solid #000;

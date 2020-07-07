@@ -23,7 +23,7 @@ class UserController {
     function create(){
 
         if($_POST["email"]==""){
-            //eroor
+            //error
             return;
         }
         if($_POST["password"]==""){

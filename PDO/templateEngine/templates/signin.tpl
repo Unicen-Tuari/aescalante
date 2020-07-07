@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Registro LNS</title>
+    <title>Registro Admin LNS</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="icon" type="" href="../images/icono.png">
   </head>
   <body>
 
     <div class="login-box">
-      <img src="../images/hx.jpg" class="avatar" alt="Avatar Image">
+      <img src="../images/image_login.jpg" class="avatar" alt="Avatar Image">
       <h1>Regístrate</h1>
       <form action="createUser" method="POST">
         <label for="email">Mail</label>

@@ -22,7 +22,7 @@ class NewController{
 
     }
 
-    function Home($member = null){
+    function home($member = null){
         $players = $this->model->getPlayers();
         $positions = $this->p_model->getPositions();           
         $this->view->ShowHome($players,$positions);

@@ -9,7 +9,7 @@ class NewView {
     function __construct(){
         $this->smarty = new Smarty;
     }
-
+    //VISTA ADMINISTRADOR
     function ShowHome($players,$positions){
         $this->smarty->assign('players',$players);
         $this->smarty->assign('positions',$positions);
@@ -27,6 +27,9 @@ class NewView {
         $this->smarty -> assign('player',$player);
         $this->smarty -> display('templateEngine/templates/rename.tpl');
       }
+
+  
+      //VISTA USUARIO
       function ShowIndex(){
         $this->smarty->display('templateEngine/templates/index.tpl');
       }

@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Acceso LNS</title>
+    <title>Acceso Admin LNS</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="icon" type="" href="../images/icono.png">
   </head>
   <body>
 
     <div class="login-box">
-      <img src="../images/hx.jpg" class="avatar" alt="Avatar Image">
+      <img src="../images/image_login.jpg" class="avatar" alt="Avatar Image">
       <h1>Acceder</h1>
       <form action="access" method="POST">
         <label for="email">Mail</label>
